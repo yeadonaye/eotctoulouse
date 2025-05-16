@@ -8,6 +8,10 @@
 body, html {
   height: 100%;
   font-family: 'Helvetica Neue', sans-serif;
+  background-image: url('/img/eglise_int.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
