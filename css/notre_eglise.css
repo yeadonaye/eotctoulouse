@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-nav ul {
+nav {
   display: flex;
   justify-content: center;
   padding: 20px 0;
@@ -13,6 +13,12 @@ nav ul {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
 body {
