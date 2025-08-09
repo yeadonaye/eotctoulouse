@@ -7,6 +7,7 @@
 
 nav {
   display: flex;
+  font-family: 'Helvetica Neue', sans-serif;
   justify-content: center;
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.4);
@@ -27,7 +28,6 @@ body, html {
 
 
 header {
-  height: 100vh;
   position: relative;
   color: white;
 }
