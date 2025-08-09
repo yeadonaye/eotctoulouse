@@ -26,12 +26,6 @@ body, html {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-
-header {
-  position: relative;
-  color: white;
-}
-
 /* Styles des images */
 .content-image {
     width: 100%;
