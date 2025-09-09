@@ -6,7 +6,9 @@ Pour toute question, suggestion ou remarque, n'hésitez pas à nous écrire :
 
 >>>[Yeadonaye](mailto:yeadonayea@eotctoulouse.org)
 >>>
->>> [Yonatan](mailto:yonatank@eotctoulouse.org)
+>>>[Yonatan](mailto:yonatank@eotctoulouse.org)
+>>>
+>>>[Nathan](mailto:nathant@eotctoulouse.org)
 
 ---
 # eotctoulouse
@@ -17,5 +19,6 @@ If you have any questions, suggestions, or feedback, feel free to reach out to u
 
 >>>[Yeadonaye](mailto:yeadonayea@eotctoulouse.org)
 >>>
->>> [Yonatan](mailto:yonatank@eotctoulouse.org)
-
+>>>[Yonatan](mailto:yonatank@eotctoulouse.org)
+>>>
+>>>[Nathan](mailto:nathant@eotctoulouse.org)
