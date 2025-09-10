@@ -21,6 +21,13 @@ nav ul {
   gap: 30px;
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 body, html {
   font-family: 'Helvetica Neue', sans-serif;
 }
