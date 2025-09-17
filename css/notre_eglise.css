@@ -59,3 +59,32 @@ p {
   margin: 80px 0;
 }
 
+footer {
+  background: #000;       /* solid dark background */
+  color: #fff;
+  padding: 30px 15px;
+  text-align: center;
+  margin-top: 100px;      /* space before footer */
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+
