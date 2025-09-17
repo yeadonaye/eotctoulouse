@@ -1,13 +1,14 @@
 /* Reset et styles de base */
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 0;
-  width: 100%;
+  z-index: 1000;
 }
 
 nav ul {
