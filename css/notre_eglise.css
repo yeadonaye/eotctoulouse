@@ -1,17 +1,16 @@
 /* Reset et styles de base */
 
 nav {
-  position: fixed;         /* stays on top */
-  top: 0;
-  width: 100%;
-  background: #000; /* semi-transparent overlay */
-  z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
   gap: 30px;
+  list-style: none;
+  margin: 0;      /* important */
+  padding: 0;
 }
 
 nav a {
@@ -54,6 +53,15 @@ p {
   position: relative;
   margin-top: 0;
   margin: 80px 0;
+}
+
+.image-text {
+  display: flex;
+  align-items: center;   /* vertical centering */
+  gap: 40px;              /* space between image and text */
+  margin: 80px auto;      /* vertical spacing around the section */
+  max-width: 1200px;      /* optional: keep content from getting too wide */
+  padding: 0 20px;        /* optional: side padding on small screens */
 }
 
 footer {
