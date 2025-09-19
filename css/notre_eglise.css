@@ -80,6 +80,13 @@ p {
   flex-direction: column;  /* stack paragraphs vertically */
 }
 
+.image12 .text2 {
+  margin-left: 20px;
+  text-align: justify;
+  flex: 1;  
+  flex-direction: column;  /* stack paragraphs vertically */
+}
+
 .image12 .text p {
   margin-top : 20px;
   flex: 1;    
