@@ -65,7 +65,9 @@ p {
 }
 
 .image12 {
-  display: flex;
+  display: block;
+  margin-left: 0;
+  margin-right: auto; 
   align-items: center;   /* vertical centering */
   gap: 40px;              /* space between image and text */
   margin: 80px auto;      /* vertical spacing around the section */
