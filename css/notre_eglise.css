@@ -60,7 +60,7 @@ p {
 }
 
 .image-section {
-  margin-left: 20px 0;      
+  margin-left: 10px;      
   justify-content: flex-start;
 }
 
@@ -69,8 +69,8 @@ p {
   align-items: left;       /* vertically centers them */
   gap: 40px;                  /* space between image and text */
   max-width: 1200px;          /* optional: keeps section from getting too wide */
-  margin: 80px auto;           /* centers the whole section */
-  padding: 0 20px;        /* optional: side padding on small screens */
+  margin-left: 10px;      
+  justify-content: flex-start;        /* optional: side padding on small screens */
 }
 
 .image12 img{
