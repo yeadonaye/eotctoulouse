@@ -82,6 +82,7 @@ p {
 
 .image12 .text2 {
   margin-left: 20px;
+  margin-rigth: 20px;
   text-align: justify;
   flex: 1;  
   flex-direction: column;  /* stack paragraphs vertically */
