@@ -66,7 +66,7 @@ p {
 
 .image12 {
   display: flex;             /* enables side-by-side layout */
-  align-items: center;       /* vertically centers them */
+  align-items: left;       /* vertically centers them */
   gap: 40px;                  /* space between image and text */
   max-width: 1200px;          /* optional: keeps section from getting too wide */
   margin: 80px auto;           /* centers the whole section */
