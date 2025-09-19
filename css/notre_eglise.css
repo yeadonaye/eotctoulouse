@@ -65,13 +65,13 @@ p {
 }
 
 .image12 {
-  display: flex;             /* enables side-by-side layout */
-  align-items: left;       /* vertically centers them */
-  gap: 40px;                  /* space between image and text */
-  max-width: 1200px;   
-  margin-top : 80px;       /* optional: keeps section from getting too wide */
-  margin-left: 10px;      
-  justify-content: flex-start;        /* optional: side padding on small screens */
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;        /* fill full width */
+  max-width: none;    /* remove the old width limit */
+  margin: 80px 0;
+  padding: 0 20px;        /* optional: side padding on small screens */
 }
 
 .image12 .text {
@@ -81,17 +81,12 @@ p {
 }
 
 .image12 .text p {
-  text-align: justify;
-  flex: 1;
-  line-height: 1.6;
-  margin: 0 0 15px 0;  /* space between paragraphs */
-  padding: 0;
-  max-width: none;  
+  flex: 1;    
 }
 
 .image12 img{
-  width: 75%;      /* takes 3/4 of the container width */
-  height: auto;    /* keeps correct proportions */
+  width: 50%;         /* takes half of the space */
+  height: auto;
   display: block;
 }
 
