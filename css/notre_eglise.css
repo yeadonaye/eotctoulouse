@@ -74,11 +74,15 @@ p {
   justify-content: flex-start;        /* optional: side padding on small screens */
 }
 
-.image12 p {
+.image12 .text {
+  flex: 1;         /* text takes the remaining space */
+}
+
+.image12 .text p {
   line-height: 1.6;
-  margin: 0;
-  padding: 0 15px;   /* optional: keeps a little side space on small screens */
-  max-width: none;   /* make sure there's no limit */
+  margin: 0 0 15px 0;  /* space between paragraphs */
+  padding: 0;
+  max-width: none;  
 }
 
 .image12 img{
