@@ -74,7 +74,7 @@ p {
   justify-content: flex-start;        /* optional: side padding on small screens */
 }
 
-p {
+.image12 p {
   line-height: 1.6;
   margin: 0;
   padding: 0 15px;   /* optional: keeps a little side space on small screens */
