@@ -75,10 +75,14 @@ p {
 }
 
 .image12 .text {
-  flex: 1;         /* text takes the remaining space */
+  flex: 1;  
+  display: flex;
+  flex-direction: column;  /* stack paragraphs vertically */
+  justify-content: center;       /* text takes the remaining space */
 }
 
 .image12 .text p {
+  flex: 1;
   line-height: 1.6;
   margin: 0 0 15px 0;  /* space between paragraphs */
   padding: 0;
