@@ -81,6 +81,7 @@ p {
 }
 
 .image12 .text p {
+  text-align: justify;
   flex: 1;
   line-height: 1.6;
   margin: 0 0 15px 0;  /* space between paragraphs */
