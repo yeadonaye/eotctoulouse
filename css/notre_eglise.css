@@ -74,6 +74,13 @@ p {
   justify-content: flex-start;        /* optional: side padding on small screens */
 }
 
+p {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 15px;   /* optional: keeps a little side space on small screens */
+  max-width: none;   /* make sure there's no limit */
+}
+
 .image12 img{
   width: 75%;      /* takes 3/4 of the container width */
   height: auto;    /* keeps correct proportions */
