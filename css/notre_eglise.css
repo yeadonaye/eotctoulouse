@@ -65,14 +65,18 @@ p {
 }
 
 .image12 {
-  display: block;
-  margin-left: 0;
-  margin-right: auto; 
-  align-items: center;   /* vertical centering */
-  gap: 40px;              /* space between image and text */
-  margin: 80px auto;      /* vertical spacing around the section */
-  max-width: 1200px;      /* optional: keep content from getting too wide */
+  display: flex;             /* enables side-by-side layout */
+  align-items: center;       /* vertically centers them */
+  gap: 40px;                  /* space between image and text */
+  max-width: 1200px;          /* optional: keeps section from getting too wide */
+  margin: 80px auto;           /* centers the whole section */
   padding: 0 20px;        /* optional: side padding on small screens */
+}
+
+.image12 img{
+  width: 300px;               /* set a width for the image */
+  height: auto;
+  display: block;
 }
 
 footer {
