@@ -68,7 +68,8 @@ p {
   display: flex;             /* enables side-by-side layout */
   align-items: left;       /* vertically centers them */
   gap: 40px;                  /* space between image and text */
-  max-width: 1200px;          /* optional: keeps section from getting too wide */
+  max-width: 1200px;   
+  margin-top : 80px;       /* optional: keeps section from getting too wide */
   margin-left: 10px;      
   justify-content: flex-start;        /* optional: side padding on small screens */
 }
