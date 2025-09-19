@@ -74,8 +74,8 @@ p {
 }
 
 .image12 img{
-  width: 300px;               /* set a width for the image */
-  height: auto;
+  width: 50%;      /* takes half the container width */
+  height: auto;    /* keeps correct proportions */
   display: block;
 }
 
