@@ -35,7 +35,7 @@ body, html {
 }
 
 p { 
-  font-size: 20px;
+  font-size: 10px;
   line-height: 1.6; /* makes text easier to read */ 
   max-width: 800px; /* optional: limit paragraph width for nicer reading */ 
   margin: 0 auto; /* center the paragraphs if they have a max-width */ 
