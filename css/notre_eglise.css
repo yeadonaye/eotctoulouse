@@ -97,6 +97,14 @@ p {
   display: block;
 }
 
+.image13 {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  margin-top : 20px;
+  margin-right : 20px;
+}
+
 footer {
   background: #000;       /* solid dark background */
   color: #fff;
