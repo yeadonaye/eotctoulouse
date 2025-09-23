@@ -70,6 +70,7 @@ p {
   max-width: 100%;
   margin-right : 5px;    
   margin : 80px 0;
+  margin-bottom: 5%;
 }
 
 .image12 .text {
@@ -99,8 +100,8 @@ p {
 }
 
 .image13 {
+  display : flex;
   max-width: 100%;
-  margin-top : 5px;
   font-family: "Times New Roman", Times, serif;  
 
 }
