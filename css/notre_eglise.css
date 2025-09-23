@@ -34,6 +34,12 @@ body, html {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
+p { 
+  line-height: 1.6; /* makes text easier to read */ 
+  max-width: 800px; /* optional: limit paragraph width for nicer reading */ 
+  margin: 0 auto; /* center the paragraphs if they have a max-width */ 
+  padding: 0 15px; /* some side padding on small screens */ }
+
 h1 {
   text-align: left;      /* Aligns text to the left */
   color: #000;        /* Changes text color */
