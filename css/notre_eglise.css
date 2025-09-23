@@ -88,7 +88,8 @@ p {
 
 .image12 .text p {
   margin-top : 20px;
-  flex: 1;    
+  flex: 1; 
+  font-family: "Times New Roman", Times, serif;  
 }
 
 .image12 img{
