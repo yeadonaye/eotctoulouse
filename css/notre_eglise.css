@@ -36,8 +36,7 @@ body, html {
 
 p { 
   font-size: 15px;
-  line-height: 1.6; /* makes text easier to read */ 
-  max-width: 800px; /* optional: limit paragraph width for nicer reading */ 
+  line-height: 1.6; /* makes text easier to read */  /* optional: limit paragraph width for nicer reading */ 
   margin: 0 auto; /* center the paragraphs if they have a max-width */ 
   padding: 0 15px; /* some side padding on small screens */ }
 
@@ -46,7 +45,8 @@ h1 {
   color: #000;        /* Changes text color */
   font-size: 36px;       /* Optional: changes font size */
   margin-left: 0;
-  margin-top: 60px;
+  margin-top: 40px;
+  font-family: "Times New Roman", Times, serif;
 }
 /* Styles des images */
 .content-image {
