@@ -107,7 +107,7 @@ h1 {
 }
 
 .image13 {
-  flex-direction: row;
+  text-align: justify;
   display : flex;
   font-family: "Times New Roman", Times, serif;  
 }
