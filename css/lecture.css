@@ -57,7 +57,7 @@ body {
 details {
   white-space: pre-wrap;
   margin : 20px 5px;
-  text-align: center;
+  text-align: justify;
   position: relative;   /* creates a stacking context */
   z-index: 10;          /* higher than the header/nav if needed */
   border: 1px solid #aaa;
