@@ -18,9 +18,10 @@ html {
 }
 
 header {
-    background: url('img/your-background-image.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: auto;           /* remove full viewport height */
+    min-height: 100px;      /* optional: keep a minimum height */
     position: relative;
+    background: url('/img/textes_bg.jpg') no-repeat center center/cover;
     color: white;
 }
 
