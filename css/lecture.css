@@ -10,7 +10,7 @@ body,
 html {
     height: 100%;
     font-family: 'Helvetica Neue', sans-serif;
-    background-image: url('/img/eglise_int.jpg');
+    background-image: url('/img/textes_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
