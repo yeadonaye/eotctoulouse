@@ -55,6 +55,7 @@ body {
 }
 
 details {
+  text-align: center;
   position: relative;   /* creates a stacking context */
   z-index: 10;          /* higher than the header/nav if needed */
   border: 1px solid #aaa;
