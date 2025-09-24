@@ -32,7 +32,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0);
     position: absolute;
     top: 0;
     width: 100%;
@@ -60,7 +60,7 @@ details {
   z-index: 10;          /* higher than the header/nav if needed */
   border: 1px solid #aaa;
   border-radius: 4px;
-  padding: 1.5em 1.5em 0;
+  padding: 1em 1em 0;
   background-color: rgba(255, 255, 255, 0.9); /* ensures text is visible */
 }
 
