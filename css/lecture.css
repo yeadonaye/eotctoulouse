@@ -54,9 +54,12 @@ body {
 }
 
 details {
+  position: relative;   /* creates a stacking context */
+  z-index: 10;          /* higher than the header/nav if needed */
   border: 1px solid #aaa;
   border-radius: 4px;
   padding: 0.5em 0.5em 0;
+  background-color: rgba(255, 255, 255, 0.9); /* ensures text is visible */
 }
 
 summary {
@@ -67,6 +70,7 @@ summary {
 
 details[open] {
   padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.95); /* optional */
 }
 
 details[open] summary {
