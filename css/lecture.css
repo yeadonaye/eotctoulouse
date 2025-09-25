@@ -1,83 +1,92 @@
-/* Reset */
-
+/* Reset de base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body,
-html {
-    height: 100%;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-image: url('/img/textes_bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
 }
-
-header {
-    height: auto;           /* remove full viewport height */
-    min-height: 100px;      /* optional: keep a minimum height */
-    position: relative;
-    background: url('/img/textes_bg.jpg') no-repeat center center/cover;
-    color: white;
-}
-
 
 /* Navigation */
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    background: rgba(0, 0, 0);
-    position: absolute;
-    top: 0;
-    width: 100%;
+header {
+  background: #333;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0.5rem;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-body {
-    background-color: #000;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: block;
 }
 
+nav a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Contenu principal */
+main {
+  margin: 1rem auto;
+  max-width: 900px;
+}
+
+/* Détails / accordéons */
 details {
-  white-space: pre-wrap;
-  margin : 20px 5px;
-  text-align: justify;
-  position: relative;   /* creates a stacking context */
-  z-index: 10;          /* higher than the header/nav if needed */
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 1em 1em 0;
-  background-color: rgba(255, 255, 255); /* ensures text is visible */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
 }
 
 summary {
   font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
+  cursor: pointer;
+  padding: 0.5rem 0;
 }
 
-details[open] {
-  padding: 0.5em;
-  background-color: rgba(255, 255, 255, 0.95); /* optional */
-}
+/* ---------------------- */
+/* RESPONSIVE MOBILE */
+/* ---------------------- */
 
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  nav a {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+
+  details {
+    font-size: 15px;
+  }
 }
