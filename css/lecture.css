@@ -56,10 +56,10 @@ body {
 }
 
 details {
-  /*white-space: pre-wrap;      
+  white-space: pre-wrap;      
   word-wrap: break-word;      
   overflow-wrap: break-word; 
-  font-family: monospace;*/
+  font-family: monospace;
   margin : 20px 5px;
   text-align: justify;
   position: relative;   /* creates a stacking context */
