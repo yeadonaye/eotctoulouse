@@ -23,6 +23,8 @@ header {
     min-height: 100px;      /* optional: keep a minimum height */
     position: relative;
     background: url('/img/textes_bg.jpg') repeat;
+    background-repeat: repeat;
+    background-size: auto;
     color: white;
 }
 
@@ -84,6 +86,12 @@ details[open] {
 details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
+}
+
+pre {
+  white-space: pre-wrap;   /* wrap long lines */
+  word-wrap: break-word;   /* break words if needed */
+  overflow-wrap: break-word;
 }
 
 .to-top-btn {
