@@ -15,6 +15,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -80,4 +81,23 @@ details[open] {
 details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
+}
+
+.to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:black;
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  z-index: 100;
+  transition: opacity 0.3s;
+}
+
+.to-top-btn:hover {
+  background-color: #555;
 }
