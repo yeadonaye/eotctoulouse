@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notre Église – EOTC Toulouse | Église orthodoxe éthiopienne à Toulouse</title>
+  <meta name="description" content="EOTC Toulouse – Église orthodoxe éthiopienne à Toulouse. Histoire, foi et pratiques de l'Église orthodoxe tewahedo éthiopienne (Tewahedo)." />
+  <meta name="keywords" content="EOTC Toulouse, Église orthodoxe éthiopienne, Tewahedo, Église à Toulouse, Église orthodoxe à Toulouse" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="eglise_icone.ico" />
+  <!-- Canonical URL for SEO; update to your final public URL if deployed -->
+  <link rel="canonical" href="notre-eglise.html" />
+  <meta property="og:title" content="Notre Église – EOTC Toulouse" />
+  <meta property="og:description" content="Église orthodoxe éthiopienne à Toulouse (Tewahedo). Découvrez notre histoire, notre foi et nos pratiques." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="egliseinterior.jpg" />
+  <style>
+    /* ==========================================
+       Page-specific styles (light theme + layout)
+       ========================================== */
+    /* Overrides spécifiques à cette page */
+    .header{ background: rgba(0,0,0,0.9) !important; }
+    .nav-menu a, .brand{ color:#fff !important; }
+    /* Remove underline from nav links */
+    .nav-menu a{ text-decoration:none; }
+    .nav-menu a:hover, .nav-menu a:focus{ text-decoration:none; }
+    /* Navbar centered: left = icon+brand, center = links, right = burger */
+    .nav{ display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; }
+    .nav-left{ justify-self:start; display:flex; align-items:center; gap:10px; }
+    .nav-menu{ justify-self:center; display:flex; gap:28px; }
+    .burger{ justify-self:end; }
+    .logo-icon{ width:24px; height:24px; object-fit:cover; border-radius:50%; overflow:hidden }
+    .cover{
+      position:relative; min-height:54vh; display:grid; place-items:center; text-align:center; color:#fff;
+      background-image: url('egliseinterior.jpg');
+      background-size:cover; background-position:center; isolation:isolate;
+    }
+    .cover::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.55)); z-index:-1 }
+    .cover h1{ font-size:clamp(2rem,3.2vw + 1rem,3.2rem); margin:0 0 8px }
+    .cover p{ margin:0 auto; color:#e5e7eb; max-width:900px; padding:0 16px; text-align:center }
+    .content{ padding:48px 0 }
+    .prose{ max-width:900px; margin:0 auto; display:grid; gap:18px; line-height:1.65 }
+    .prose h2{ margin:14px 0 6px }
+    .quote{ padding:14px 16px; border-left:3px solid rgba(255,255,255,.2); background:rgba(255,255,255,.04); border-radius:8px }
+    .backbar{ background:#000; border-top:1px solid rgba(255,255,255,.12); }
+    .backbar .container{ display:flex; align-items:center; justify-content:space-between; padding:10px 0; }
+    .backbar small{ color:#fff; font-weight:600 }
+    .backbar a{ color:#fff; text-decoration:none }
+    .backbar a:hover{ text-decoration:underline }
+    /* Thème clair local à la page */
+    body{ background:#f8f5ef; color:#1f2937; }
+    .card{ background:#ffffff; border:1px solid rgba(0,0,0,.08); color:#1f2937; }
+    .quote{ background:rgba(0,0,0,.04); border-left-color: rgba(0,0,0,.15); }
+    /* Center footer text */
+    .footer-inner{ justify-content:center !important; }
+  </style>
+  <!-- Structured data for better SEO (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "name": "EOTC Toulouse – Église orthodoxe éthiopienne à Toulouse",
+    "url": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Toulouse",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- =====================
+       Header / Navigation
+       ===================== -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <div class="nav-left">
+        <!-- Site icon + brand (link to top of page) -->
+        <img class="logo-icon" src="eglise_icone.ico" alt="Icône Église" />
+        <a href="#top" class="brand" aria-label="Haut de page">EOTC Toulouse</a>
+      </div>
+      <!-- Centered navigation links -->
+      <nav id="nav-menu" class="nav-menu" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#events">Événements à venir</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================
+       Cover section with background image
+       ===================== -->
+  <section class="cover">
+    <div class="container">
+      <h1>Notre Église</h1>
+      <p>Découvrir l'Église orthodoxe tewahedo éthiopienne : une foi ancienne, vivante et en mission.</p>
+    </div>
+  </section>
+
+  <!-- =====================
+       Context bar (breadcrumb-like)
+       ===================== -->
+  <div class="backbar">
+    <div class="container">
+      <small>Vous lisez : Notre Église</small>
+      <a href="#top">← Haut de page</a>
+    </div>
+  </div>
+
+  <!-- =====================
+       Main content
+       ===================== -->
+  <main class="content">
+    <div class="container prose">
+      <h2>Identité et appartenance</h2>
+      <p>
+        L'Église orthodoxe tewahedo éthiopienne est une dénomination établie en Éthiopie, autocéphale depuis 1951,
+        qui fait partie de l'ensemble formé par les Églises des trois conciles. Il s'agit de l'une des plus anciennes
+        églises chrétiennes du monde, constituée vers le IVe siècle. Elle emploie le rite guèze.
+      </p>
+      <p class="quote">
+        Son chef porte le titre de patriarche et catholicos d'Éthiopie, itchégué du siège de Takla Haïmanot et archevêque
+        d'Aksoum, et réside à Addis-Abeba. Le titulaire actuel est l'abouna Mathias, élu le 28 février 2013, qui a succédé à l'abouna Paulos.
+      </p>
+
+      <h2>Signification de « Tewahedo »</h2>
+      <p>
+        Tewahedo (Guèze : ተዋሕዶ täwaḥədo) signifie « uni en un ». Ce terme renvoie à la croyance orthodoxe orientale en le miaphysisme,
+        c’est-à-dire l’existence d’une nature parfaitement unifiée du Christ : une union complète des natures divine et humaine en une seule nature,
+        pour accomplir le salut de l’humanité. Cette position, suivie notamment par Cyrille d’Alexandrie, affirme « mia physis tou Theou logou sesarkōmenē » –
+        « une nature du Verbe de Dieu incarné » – tout en reconnaissant l’union hypostatique.
+      </p>
+
+      <h2>Aux sources de la foi en Éthiopie</h2>
+      <p>
+        L'Église éthiopienne orthodoxe est une des premières Églises chrétiennes du continent africain. Plusieurs traditions évoquent l’introduction
+        du christianisme en Éthiopie : le récit du baptême de l’eunuque de la reine Candace par le diacre Philippe (Ier siècle), ou encore une
+        tradition apocryphe selon laquelle saint Matthieu aurait évangélisé un roi axoumite et y aurait connu le martyre.
+      </p>
+      
+
+      <h2>Vie de l'Église aujourd’hui</h2>
+      <p>
+        Aujourd’hui, l’Église tewahedo éthiopienne demeure un témoignage vivant de la foi chrétienne en Afrique de l’Est : liturgie en guèze et en langues locales,
+        cycles de jeûnes, musique et danse liturgiques, et un fort engagement communautaire. Elle met l’accent sur la prière, la charité, la catéchèse,
+        et la transmission intergénérationnelle de la foi.
+      </p>
+
+      <h2>Ce que nous croyons et pratiquons</h2>
+      <ul class="checks">
+        <li>Foi centrée sur le Christ, vrai Dieu et vrai homme.</li>
+        <li>Liturgie ancienne, sacrements et vie sacramentelle.</li>
+        <li>Lecture de l’Écriture sainte dans la tradition des Pères.</li>
+        <li>Service du prochain : solidarité, justice et paix.</li>
+      </ul>
+
+      
+    </div>
+  </main>
+
+  <!-- =====================
+       Footer
+       ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> EOTC Toulouse. Tous droits réservés.</p>
+      <!-- No footer nav needed on a single-page site -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
