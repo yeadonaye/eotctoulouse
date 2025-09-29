@@ -1,0 +1,43 @@
+/* Base (light theme) — scoped to this page only */
+.notre-eglise{
+  --bg: #f8f5ef;
+  --card: #ffffff;
+  --text: #1f2937;
+  --text-dim: #4b5563;
+  --primary: #2563eb;
+  --primary-600: #1d4ed8;
+  --radius: 14px;
+  --shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+/* Body of this page */
+.notre-eglise{ margin:0; font-family: 'Inter',system-ui,-apple-system,Segoe UI,Roboto; color:var(--text); background:var(--bg); }
+.notre-eglise img{max-width:100%; display:block}
+
+/* Layout */
+.notre-eglise .container{width:min(1120px,92%); margin-inline:auto}
+.notre-eglise .header{position:sticky; top:0; z-index:100; backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid rgba(0,0,0,.06)}
+.notre-eglise .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+.notre-eglise .brand{color:#fff; font-weight:700; text-decoration:none; letter-spacing:.3px}
+
+/* Text blocks */
+.notre-eglise .prose{ max-width:900px; margin:0 auto; display:grid; gap:18px; line-height:1.65 }
+
+/* Cards & helpers */
+.notre-eglise .card{background:var(--card); border:1px solid rgba(0,0,0,.08); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
+.notre-eglise .quote{ padding:14px 16px; border-left:3px solid rgba(0,0,0,.15); background:rgba(0,0,0,.04); border-radius:8px }
+
+/* Lists */
+.notre-eglise .checks{list-style:none; padding:0; margin:14px 0 0; display:grid; gap:8px}
+.notre-eglise .checks li{position:relative; padding-left:26px}
+.notre-eglise .checks li::before{content:"✓"; position:absolute; left:0; top:0; color:var(--primary-600)}
+
+/* Footer */
+.notre-eglise .footer{border-top:1px solid rgba(0,0,0,.08); background:#0b0f19}
+.notre-eglise .footer-inner{display:flex; align-items:center; justify-content:space-between; padding:22px 0}
+.notre-eglise .footer-inner p{color:#e5e7eb}
+
+/* Responsive */
+@media (max-width: 640px){
+  .notre-eglise .footer-inner{flex-direction:column; gap:12px}
+}
