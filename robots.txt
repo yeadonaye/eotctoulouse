@@ -1,0 +1,14 @@
+# robots.txt for EOTC Toulouse
+# This file tells search engines which pages to crawl
+
+# Allow all search engines to index all pages
+User-agent: *
+Allow: /
+
+# Sitemap location (update domain when deployed)
+Sitemap: https://eotc-toulouse.fr/sitemap.xml
+
+# Disallow admin files and JSON data
+Disallow: /events.json
+Disallow: /ADMIN_GUIDE.md
+Disallow: /README.md
