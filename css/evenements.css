@@ -1,0 +1,226 @@
+/* ==========================================
+   Evenements Page Styles
+   White background theme with dynamic events
+   ========================================== */
+
+/* ==========================================
+   CSS Variables
+   ========================================== */
+:root { 
+  --text: #111827; 
+  --text-dim: #4b5563; 
+  --radius: 14px; 
+}
+
+/* ==========================================
+   Base Styles
+   ========================================== */
+* { 
+  box-sizing: border-box; 
+}
+
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto; 
+  color: var(--text); 
+  background: #ffffff; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+img { 
+  max-width: 100%; 
+  display: block; 
+}
+
+/* ==========================================
+   Layout Container
+   ========================================== */
+.container { 
+  width: min(1120px, 92%); 
+  margin-inline: auto; 
+}
+
+/* ==========================================
+   Navigation Bar
+   Same design language as notre-eglise
+   ========================================== */
+.header { 
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
+  backdrop-filter: saturate(140%) blur(8px); 
+  background: rgba(0, 0, 0, 0.9); 
+  border-bottom: 1px solid rgba(255, 255, 255, .06); 
+}
+
+.nav { 
+  position: relative; 
+  display: flex; 
+  align-items: center; 
+  padding: 14px 0; 
+}
+
+.nav-left { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.brand { 
+  color: #fff; 
+  font-weight: 700; 
+  text-decoration: none; 
+  letter-spacing: .3px; 
+}
+
+.logo-icon { 
+  width: 24px; 
+  height: 24px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  overflow: hidden; 
+}
+
+/* Hard-center the nav links */
+.nav-menu { 
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: flex; 
+  gap: 28px; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.nav-menu a { 
+  color: #fff; 
+  text-decoration: none; 
+  font-weight: 500; 
+}
+
+.nav-menu a:hover, 
+.nav-menu a:focus { 
+  text-decoration: none; 
+}
+
+/* ==========================================
+   Page Header Section
+   ========================================== */
+.page-hero { 
+  padding: 42px 0 18px; 
+  text-align: center; 
+}
+
+.page-hero h1 { 
+  margin: 0 0 6px; 
+  font-size: clamp(1.8rem, 2.6vw + 1rem, 2.6rem); 
+}
+
+.page-hero p { 
+  margin: 0; 
+  color: var(--text-dim); 
+}
+
+/* ==========================================
+   Events List Section
+   ========================================== */
+.events { 
+  padding: 28px 0 56px; 
+  flex: 1; /* Push footer to bottom */
+}
+
+.list { 
+  display: grid; 
+  gap: 14px; 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+}
+
+/* Individual event item */
+.item { 
+  display: grid; 
+  grid-template-columns: 160px 1fr; 
+  gap: 16px; 
+  padding: 16px; 
+  border: 1px solid rgba(0, 0, 0, .08); 
+  border-radius: var(--radius); 
+  background: #fff; 
+}
+
+/* Event item with photo */
+.item.with-photo { 
+  grid-template-columns: 160px 200px 1fr; 
+}
+
+/* Event photo */
+.item-photo { 
+  width: 200px; 
+  height: 140px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+/* Event date */
+.date { 
+  color: #374151; 
+  font-weight: 600; 
+}
+
+/* Event title */
+.item h3 { 
+  margin: 0 0 6px; 
+}
+
+/* Event description */
+.item p { 
+  margin: 0; 
+  color: var(--text-dim); 
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+.footer { 
+  border-top: 1px solid rgba(0, 0, 0, .08); 
+  background: #0b0f19; 
+}
+
+.footer-inner { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 22px 0; 
+}
+
+.footer-inner p { 
+  color: #e5e7eb; 
+  margin: 0; 
+}
+
+/* ==========================================
+   Responsive Design (Mobile)
+   ========================================== */
+@media (max-width: 720px) {
+  /* Stack event items vertically on mobile */
+  .item, 
+  .item.with-photo { 
+    grid-template-columns: 1fr; 
+  }
+  
+  /* Move date to bottom on mobile */
+  .date { 
+    order: 2; 
+  }
+  
+  /* Full width photos on mobile */
+  .item-photo { 
+    width: 100%; 
+    height: auto; 
+  }
+}
