@@ -1,74 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title with primary keyword -->
-    <title>EOTC Toulouse – Église orthodoxe éthiopienne | Église Tewahedo</title>
-
-    <!-- Meta description optimized for search -->
-    <meta name="description" content="Découvrez l'Église EOTC Toulouse – Église orthodoxe éthiopienne Tewahedo à Toulouse. Histoire, foi, liturgie et événements de notre communauté.">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://eotctoulouse.org">
-
-    <!-- Favicon -->
-    <link rel="icon" href="/img/eglise_icone.ico" type="image/x-icon">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="EOTC Toulouse – Église orthodoxe éthiopienne">
-    <meta property="og:description" content="Découvrez l'Église EOTC Toulouse – Église orthodoxe éthiopienne Tewahedo à Toulouse.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://eotctoulouse.org">
-    <meta property="og:image" content="/img/eglise_icone.ico">
-
-    <!-- Structured Data (Schema.org for Church) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Church",
-      "name": "EOTC Toulouse – Église orthodoxe éthiopienne",
-      "url": "https://eotctoulouse.org",
-      "description": "Église orthodoxe éthiopienne Tewahedo à Toulouse – histoire, foi, liturgie et communauté.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Toulouse",
-        "addressCountry": "FR"
-      }
-    }
-    </script>
+    <link rel="icon" href="eglise_icone.ico" type="image/x-icon" />
+    <title>Église orthodoxe éthiopienne à Toulouse</title>
+    
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Dedicated CSS file -->
+    <link rel="stylesheet" href="/css/indexss.css">
 </head>
 
 <body>
-    <!-- Header & Navigation -->
-    <header>
+    <header class="loading">
+        <!-- Optional loading spinner -->
+        <div class="loading-spinner"></div>
+        
         <nav>
             <ul>
-                <li><a href="/index.html">Accueil</a></li>
-                <li><a href="/html/notre-eglise.html">Notre Église</a></li>
-                <li><a href="/html/evenements.html">Événements</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="notre-eglise.html">Notre Église</a></li>
+                <li><a href="evenements.html">Événements</a></li>
             </ul>
         </nav>
-
-        <!-- Hero Section with keyword-rich H1 -->
         <div class="hero-text">
             <h1>EOTC TOULOUSE</h1>
             <p><em>Découvrez l'église orthodoxe éthiopienne à Toulouse</em></p>
         </div>
     </header>
-
-    <footer>
-        <p>© <span id="year"></span> EOTC Toulouse. Tous droits réservés.</p>
-    </footer>
-
+    
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+        // Optimize background image loading with blur effect
+        const header = document.querySelector('header');
+        const img = new Image();
+        
+        img.onload = function() {
+            // Remove loading class and add loaded class for smooth transition
+            header.classList.remove('loading');
+            header.classList.add('loaded');
+        };
+        
+        img.onerror = function() {
+            // If image fails to load, still remove loading state
+            header.classList.remove('loading');
+            console.error('Failed to load background image');
+        };
+        
+        // Start loading the image
+        img.src = 'egliseinterior.jpg';
     </script>
 </body>
-
 </html>
