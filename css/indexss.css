@@ -43,7 +43,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   background-color: #0b0f19; /* Fallback color */
-  background-image: url('egliseinterior.jpg');
+  background-image: url('/img/eglise_int.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
