@@ -22,3 +22,16 @@ If you have any questions, suggestions, or feedback, feel free to reach out to u
 >>>[Yonatan](mailto:yonatank@eotctoulouse.org)
 >>>
 >>>[Nathan](mailto:nathant@eotctoulouse.org)
+
+---
+# ኢኦተቤ ቱሉዝ
+
+እንኳን ወደ ድር ጣቢያችን ልማት የተዘጋጀው የመጀመሪያ የGit መዝገብ በደህና መጡ።
+ለዚህ ፕሮጀክት ያሳያችሁት ፍላጎት እናመሰግናለን።
+ጥያቄ፣ ሀሳብ፣ ወይም አስተያየት ካላችሁ፣ እባኮትን ነፃ ይገናኙን፦
+
+>>>[የአዶናይ](mailto:yeadonayea@eotctoulouse.org)
+>>>
+>>>[ዮናታን](mailto:yonatank@eotctoulouse.org)
+>>>
+>>>[ናታን](mailto:nathant@eotctoulouse.org)
