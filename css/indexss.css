@@ -214,11 +214,12 @@ header.loaded .loading-spinner {
 
   .hero-text {
     padding: 60px 20px 80px;
-    padding-top: 50%;
   }
 
   .hero-text h1 {
     letter-spacing: 1px;
+    margin-top: 50%;
+    padding-top: 50%;
   }
 }
 
