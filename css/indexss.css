@@ -214,6 +214,7 @@ header.loaded .loading-spinner {
 
   .hero-text {
     padding: 60px 20px 80px;
+    padding-top: 50%;
   }
 
   .hero-text h1 {
