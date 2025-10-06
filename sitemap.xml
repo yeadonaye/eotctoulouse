@@ -2,14 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.eotctoulouse.org/</loc>
-    <lastmod>06-10-2025</lastmod>
+    <lastmod>2025-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!--Page evenement-->
   <url>
-    <loc>https://www.eotctoulouse.org/about</loc>
-    <lastmod>06-10-2025</lastmod>
+    <loc>https://www.eotctoulouse.org/html/evenement.html</loc>
+    <lastmod>2025-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!--Page lecture-->
+  <url>
+    <loc>https://www.eotctoulouse.org/html/lecture.html</loc>
+	<lastmod>2025-10-06</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+  </url>
+
+  <!--Page notre_eglise-->
+  <url>
+    <loc>https://www.eotctoulouse.fr/html/notre_eglise.html</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>0.5</changefreq>
   </url>
 </urlset>
