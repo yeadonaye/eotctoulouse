@@ -107,7 +107,7 @@ nav {
   position: relative;
   z-index: 10;
   padding: 20px 40px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0);
   backdrop-filter: saturate(140%) blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -142,7 +142,7 @@ nav ul li a:focus {
   position: relative;
   z-index: 10;
   text-align: center;
-  padding: 80px 20px 120px;
+  padding-bottom: 50vh;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -213,7 +213,8 @@ header.loaded .loading-spinner {
   }
 
   .hero-text {
-    padding: 50% 20px;
+    padding-bottom: 50%;
+    margin-bottom: 50%;
   }
 
   .hero-text h1 {
@@ -230,3 +231,4 @@ header.loaded .loading-spinner {
     font-size: 0.95rem;
   }
 }
+
