@@ -1,11 +1,11 @@
 /* ==========================================
-   Indexss Page Styles
-   Hero page with background image optimization
-   ========================================== */
+  Indexss Page Styles
+  Hero page with background image optimization
+  ========================================== */
 
 /* ==========================================
-   CSS Variables
-   ========================================== */
+  CSS Variables
+  ========================================== */
 :root {
   --primary: #6ee7b7;
   --text: #ffffff;
@@ -13,8 +13,8 @@
 }
 
 /* ==========================================
-   Base Styles
-   ========================================== */
+  Base Styles
+  ========================================== */
 * {
   margin: 0;
   padding: 0;
@@ -33,9 +33,9 @@ body {
 }
 
 /* ==========================================
-   Header with Background Image
-   Optimized loading with blur effect
-   ========================================== */
+  Header with Background Image
+  Optimized loading with blur effect
+  ========================================== */
 header {
   position: relative;
   min-height: 100vh;
@@ -101,8 +101,8 @@ header.loaded {
 }
 
 /* ==========================================
-   Navigation Bar
-   ========================================== */
+  Navigation Bar
+  ========================================== */
 nav {
   position: relative;
   z-index: 10;
@@ -136,8 +136,8 @@ nav ul li a:focus {
 }
 
 /* ==========================================
-   Hero Text Section
-   ========================================== */
+  Hero Text Section
+  ========================================== */
 .hero-text {
   position: relative;
   z-index: 10;
@@ -175,8 +175,8 @@ nav ul li a:focus {
 }
 
 /* ==========================================
-   Loading Spinner (optional)
-   ========================================== */
+  Loading Spinner (optional)
+  ========================================== */
 .loading-spinner {
   position: absolute;
   top: 50%;
@@ -200,16 +200,53 @@ header.loaded .loading-spinner {
 }
 
 /* ==========================================
-   Responsive Design (Mobile)
-   ========================================== */
+  Responsive Design (Mobile)
+  ========================================== */
+  
+.menu-toggle {
+  display:none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover{
+  color: var(--primary);
+}
+
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   nav {
     padding: 15px 20px;
   }
 
   nav ul {
+    display: none;
     flex-direction: column;
     gap: 16px;
+    background: ragba(0, 0, 0, 0);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul.active{
+    display: flex;
   }
 
   .hero-text {
