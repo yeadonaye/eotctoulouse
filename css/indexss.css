@@ -213,8 +213,8 @@ header.loaded .loading-spinner {
   }
 
   .hero-text {
-    padding-bottom: 50%;
-    margin-bottom: 50%;
+    padding-bottom: 50vh;
+    margin-bottom: 50vh;
   }
 
   .hero-text h1 {
