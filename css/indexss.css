@@ -230,7 +230,7 @@ header.loaded .loading-spinner {
     display: none;
     flex-direction: column;
     gap: 16px;
-    background: ragba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     position: absolute;
     top: 70px;
     left: 0;
@@ -247,6 +247,7 @@ header.loaded .loading-spinner {
 
   nav ul.active{
     display: flex;
+    background: rgba(0, 0, 0, 0);
   }
 
   .hero-text {

@@ -23,7 +23,7 @@
         <nav>
             <div class="nav-container">
                 <h2>Menu Hambourger</h2>
-                <button class="menu-toggle" arial-label="Hambourger menu">☰</button>
+                <button class="menu-toggle">☰</button>
             </div>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -56,6 +56,14 @@
         
         // Start loading the image
         img.src = '/img/egliseinterior.jpg';
+
+        //For the hambourger menu
+        const menutoggle = dosument.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.active('show');
+        });
     </script>
 </body>
 </html>
