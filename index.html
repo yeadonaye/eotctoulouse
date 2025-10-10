@@ -22,7 +22,6 @@
         
         <nav>
             <div class="nav-container">
-                <h2>Menu Hambourger</h2>
                 <button class="menu-toggle">☰</button>
             </div>
             <ul>
@@ -58,11 +57,11 @@
         img.src = '/img/egliseinterior.jpg';
 
         //For the hambourger menu
-        const menutoggle = dosument.querySelector('.menu-toggle');
+        const menuToggle = document.querySelector('.menu-toggle');
         const navList = document.querySelector('nav ul');
 
         menuToggle.addEventListener('click', () => {
-            navList.classList.active('show');
+            navList.classList.toggle('active');
         });
     </script>
 </body>
