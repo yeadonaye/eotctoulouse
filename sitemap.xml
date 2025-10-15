@@ -9,7 +9,7 @@
   
   <!--Page evenement-->
   <url>
-    <loc>https://www.eotctoulouse.org/html/evenement.html</loc>
+    <loc>https://www.eotctoulouse.org/evenement.html</loc>
     <lastmod>2025-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -17,7 +17,7 @@
 
   <!--Page lecture-->
   <url>
-    <loc>https://www.eotctoulouse.org/html/lecture.html</loc>
+    <loc>https://www.eotctoulouse.org/lecture.html</loc>
 	<lastmod>2025-10-06</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.5</priority>
@@ -25,7 +25,7 @@
 
   <!--Page notre_eglise-->
   <url>
-    <loc>https://www.eotctoulouse.fr/html/notre_eglise.html</loc>
+    <loc>https://www.eotctoulouse.fr/notre_eglise.html</loc>
     <lastmod>2025-10-06</lastmod>
     <changefreq>0.5</changefreq>
   </url>
