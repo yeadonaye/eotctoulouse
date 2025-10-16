@@ -35,7 +35,7 @@
 /* Footer */
 .notre-eglise .footer{border-top:1px solid rgba(0,0,0,.08); background:#0b0f19}
 .notre-eglise .footer-inner{display:flex; align-items:center; justify-content:space-between; padding:22px 0}
-.notre-eglise .footer-inner p{color:#e5e7eb; position : relative; justify-content: left; align-items: left}
+.notre-eglise .footer-inner p{color:#e5e7eb; position : relative; display : flex; justify-content: left}
 
 /* Responsive */
 @media (max-width: 640px){
