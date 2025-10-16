@@ -8,7 +8,7 @@
   ========================================== */
 :root {
   --primary: #6ee7b7;
-  --text: #ffffff;
+  --text: #fff;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -223,7 +223,7 @@ header.loaded .loading-spinner {
   }
 
   nav {
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 
   nav ul {
@@ -232,17 +232,17 @@ header.loaded .loading-spinner {
     gap: 16px;
     background: rgba(0, 0, 0, 0);
     position: absolute;
-    top: 70px;
+    top: 10px;
     left: 0;
     right: 0;
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px 0;
+    text-align: left;
   }
 
   .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
   }
 
   nav ul.active{
@@ -262,6 +262,7 @@ header.loaded .loading-spinner {
 @media (max-width: 480px) {
   nav ul {
     gap: 12px;
+    background: rgba(0, 0, 0, 0);
   }
 
   nav ul li a {

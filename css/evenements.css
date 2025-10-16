@@ -203,6 +203,13 @@ img {
   margin: 0; 
 }
 
+.footer-socials {
+  display: flex;
+  gap : 10px;
+  justify-content: right;
+  align-items: center
+}
+
 /* ==========================================
    Responsive Design (Mobile)
    ========================================== */
