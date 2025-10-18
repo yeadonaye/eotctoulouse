@@ -10,52 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="icon" type="image/x-icon" href="/img/eglise_icone.ico" />
+  <link rel="stylesheet" href="/css/notre_eglise.css" />
+  <link rel="icon" type="image/png" href="/img/egliseIcone.png" />
+
   <!-- Canonical URL for SEO; update to your final public URL if deployed -->
   <link rel="canonical" href="eotctoulouse.org" />
   <meta property="og:title" content="Notre Église – EOTC Toulouse" />
   <meta property="og:description" content="Église orthodoxe éthiopienne à Toulouse (Tewahedo). Découvrez notre histoire, notre foi et nos pratiques." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/img/egliseinterior.jpg" />
-  <style>
-    /* ==========================================
-       Page-specific styles (light theme + layout)
-       ========================================== */
-    /* Overrides spécifiques à cette page */
-    .header{ background: rgba(0,0,0,0.9) !important; }
-    .nav-menu a, .brand{ color:#fff !important; }
-    /* Remove underline from nav links */
-    .nav-menu a{ text-decoration:none; }
-    .nav-menu a:hover, .nav-menu a:focus{ text-decoration:none; }
-    /* Navbar centered: left = icon+brand; links are hard-centered */
-    .nav{ position:relative; display:flex; align-items:center; }
-    .nav-left{ display:flex; align-items:center; gap:10px; }
-    .nav-menu{ position:absolute; left:50%; transform:translateX(-50%); display:flex; gap:28px; align-items:center; justify-content:center; }
-    .logo-icon{ width:24px; height:24px; object-fit:cover; border-radius:50%; overflow:hidden }
-    .cover{
-      position:relative; min-height:54vh; display:grid; place-items:center; text-align:center; color:#fff;
-      background-image: url('/img/egliseinterior.jpg');
-      background-size:cover; background-position:center; isolation:isolate;
-    }
-    .cover::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.55)); z-index:-1 }
-    .cover h1{ font-size:clamp(2rem,3.2vw + 1rem,3.2rem); margin:0 0 8px }
-    .cover p{ margin:0 auto; color:#e5e7eb; max-width:900px; padding:0 16px; text-align:center }
-    .content{ padding:48px 0 }
-    .prose{ max-width:900px; margin:0 auto; display:grid; gap:18px; line-height:1.65 }
-    .prose h2{ margin:14px 0 6px }
-    .quote{ padding:14px 16px; border-left:3px solid rgba(255,255,255,.2); background:rgba(255,255,255,.04); border-radius:8px }
-    .backbar{ background: rgba(0, 0, 0, 0.75); border-top:1px solid rgba(255,255,255,.12); }
-    .backbar .container{ display:flex; position: sticky; top: 0; align-items:center; justify-content:space-between; padding:10px 0; }
-    .backbar small{ color:#fff; font-weight:600 }
-    .backbar a{ color:#fff; text-decoration:none }
-    .backbar a:hover{ text-decoration:underline }
-    /* Thème clair local à la page */
-    body{ background:#f8f5ef; color:#1f2937; }
-    .card{ background:#ffffff; border:1px solid rgba(0,0,0,.08); color:#1f2937; }
-    .quote{ background:rgba(0,0,0,.04); border-left-color: rgba(0,0,0,.15); }
-    /* Center footer text */
-    .footer-inner{ justify-content:center !important; }
-  </style>
+  
   <!-- Structured data for better SEO (schema.org) -->
   <script type="application/ld+json">
   {
@@ -169,13 +133,13 @@
       <p>© <span id="year"> </span> EEOT Toulouse. Tous droits réservés.</p>
       <!-- No footer nav needed on a single-page site -->
         <div class="footer-socials">
-          <a href="https://www.instagram.com/eotc.st.michael.toulouse"><img src="/img/instagram.png" alt="Page Instagram de l'Eglise" style="height : 24px; width : 24px"></a>
-          <a href="http://www.youtube.com/@toulousest.michaeleotc"><img src="/img/youtube.png" alt="Page Youtube de l'Eglise" style="height : 24px; width : 43px"></a>
-          <a href="https://www.tiktok.com/@eotc.toulouse.st.michael"><img src="/img/tiktok.png" alt="Page TikTok de l'Eglise" style="height : 24px; width : 24px"></a>
+          <a href="https://www.instagram.com/eotc.st.michael.toulouse"><img class="icon" src="/img/instagram.png" alt="Page Instagram de l'Eglise"></a>
+          <a href="http://www.youtube.com/@toulousest.michaeleotc"><img class="icon-youtube" src="/img/youtube.png" alt="Page Youtube de l'Eglise"></a>
+          <a href="https://www.tiktok.com/@eotc.toulouse.st.michael"><img class="icon" src="/img/tiktok.png" alt="Page TikTok de l'Eglise"></a>
         </div>
       </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/js/notre_eglise.js"></script>
 </body>
 </html>

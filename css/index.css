@@ -224,6 +224,7 @@ header.loaded .loading-spinner {
 
   nav {
     padding: 10px 20px;
+    background: rgba(0, 0, 0, 0);
   }
 
   nav ul {
@@ -243,6 +244,7 @@ header.loaded .loading-spinner {
     display: flex;
     justify-content: space-between;
     align-items: left;
+    background: rgba(0, 0, 0, 0);
   }
 
   nav ul.active{
@@ -257,9 +259,18 @@ header.loaded .loading-spinner {
   .hero-text h1 {
     letter-spacing: 1px;
   }
+
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: var(--primary);
+    transform: translateY(-2px);
+  }
 }
 
 @media (max-width: 480px) {
+  nav {
+    background: rgba(0, 0, 0, 0);
+  }
   nav ul {
     gap: 12px;
     background: rgba(0, 0, 0, 0);
@@ -268,5 +279,10 @@ header.loaded .loading-spinner {
   nav ul li a {
     font-size: 0.95rem;
   }
-}
 
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: var(--primary);
+    transform: translateY(-2px);
+  }
+}

@@ -210,6 +210,24 @@ img {
   align-items: center
 }
 
+/* Replaces inline styles removed from HTML */
+#no-events {
+  display: none;
+  text-align: center;
+  color: #6b7280;
+  padding: 32px 0;
+}
+
+.footer-socials img.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-socials img.icon-youtube {
+  height: 24px;
+  width: 43px;
+}
+
 /* ==========================================
    Responsive Design (Mobile)
    ========================================== */

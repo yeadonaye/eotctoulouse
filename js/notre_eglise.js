@@ -16,3 +16,4 @@ links.forEach(link => {
 // Footer year
 const yearSpan = document.querySelector('#year');
 if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+

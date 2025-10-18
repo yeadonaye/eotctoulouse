@@ -106,7 +106,7 @@
       <ul class="list" id="events-list">
         <!-- Events will be loaded here by JavaScript -->
       </ul>
-      <p id="no-events" style="display:none; text-align:center; color:#6b7280; padding:32px 0;">Aucun événement à venir pour le moment.</p>
+      <p id="no-events">Aucun événement à venir pour le moment.</p>
     </div>
   </section>
 
@@ -115,99 +115,12 @@
     <div class="container footer-inner">
       <p>© <span id="year"> </span> EOTC Toulouse. Tous droits réservés.</p>
       <div class="footer-socials">
-          <a href="https://www.instagram.com/eotc.st.michael.toulouse"><img src="/img/instagram.png" alt="Page Instagram de l'Eglise" style="height : 24px; width : 24px"></a>
-          <a href="http://www.youtube.com/@toulousest.michaeleotc"><img src="/img/youtube.png" alt="Page Youtube de l'Eglise" style="height : 24px; width : 43px"></a>
-          <a href="https://www.tiktok.com/@eotc.toulouse.st.michael"><img src="/img/tiktok.png" alt="Page TikTok de l'Eglise" style="height : 24px; width : 24px"></a>
+          <a href="https://www.instagram.com/eotc.st.michael.toulouse"><img class="icon" src="/img/instagram.png" alt="Page Instagram de l'Eglise"></a>
+          <a href="http://www.youtube.com/@toulousest.michaeleotc"><img class="icon-youtube" src="/img/youtube.png" alt="Page Youtube de l'Eglise"></a>
+          <a href="https://www.tiktok.com/@eotc.toulouse.st.michael"><img class="icon" src="/img/tiktok.png" alt="Page TikTok de l'Eglise"></a>
         </div>
     </div>
   </footer>
-
-  <script>
-    // ==========================================
-    // Footer: Update copyright year dynamically
-    // ==========================================
-    const yearElement = document.querySelector('#year');
-    if (yearElement) {
-      yearElement.textContent = new Date().getFullYear();
-    }
-
-    // ==========================================
-    // Load events dynamically from events.json
-    // ==========================================
-    async function loadEvents() {
-      try {
-        // Fetch events data from JSON file
-        const response = await fetch('events.json');
-        if (!response.ok) {
-          throw new Error('Failed to load events');
-        }
-        const events = await response.json();
-        
-        // Get DOM elements
-        const eventsList = document.getElementById('events-list');
-        const noEventsMessage = document.getElementById('no-events');
-        
-        // Check if events exist
-        if (!events || events.length === 0) {
-          noEventsMessage.style.display = 'block';
-          return;
-        }
-        
-        // Create HTML for each event
-        events.forEach(event => {
-          // Create list item with appropriate class
-          const listItem = document.createElement('li');
-          listItem.className = event.photo ? 'item with-photo' : 'item';
-          
-          // Create date element
-          const dateElement = document.createElement('div');
-          dateElement.className = 'date';
-          dateElement.textContent = event.date;
-          listItem.appendChild(dateElement);
-          
-          // Create photo element (if photo exists)
-          if (event.photo) {
-            const photoElement = document.createElement('img');
-            photoElement.className = 'item-photo';
-            photoElement.src = event.photo;
-            photoElement.alt = event.title;
-            // SEO: Add loading attribute for better performance
-            photoElement.loading = 'lazy';
-            listItem.appendChild(photoElement);
-          }
-          
-          // Create content container
-          const contentContainer = document.createElement('div');
-          
-          // Create title element
-          const titleElement = document.createElement('h3');
-          titleElement.textContent = event.title;
-          
-          // Create description element
-          const descriptionElement = document.createElement('p');
-          descriptionElement.textContent = event.description;
-          
-          // Assemble content
-          contentContainer.appendChild(titleElement);
-          contentContainer.appendChild(descriptionElement);
-          listItem.appendChild(contentContainer);
-          
-          // Add to list
-          eventsList.appendChild(listItem);
-        });
-      } catch (error) {
-        // Handle errors gracefully
-        console.error('Error loading events:', error);
-        document.getElementById('no-events').style.display = 'block';
-      }
-    }
-    
-    // Initialize: Load events when DOM is ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', loadEvents);
-    } else {
-      loadEvents();
-    }
-  </script>
+  <script src="/js/evenements.js"></script>
 </body>
 </html>
