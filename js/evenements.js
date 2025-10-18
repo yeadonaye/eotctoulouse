@@ -7,7 +7,7 @@ if (yearElement) {
 // Load events dynamically from events.json
 async function loadEvents() {
   try {
-    const response = await fetch('events.json');
+    const response = await fetch('data/events.json');
     if (!response.ok) {
       throw new Error('Failed to load events');
     }

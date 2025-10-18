@@ -12,7 +12,7 @@ p {
   margin: 0 auto; /* center the paragraphs if they have a max-width */ 
   padding: 0 15px; /* some side padding on small screens */ }
 
-h1 {
+.contanier h1 {
   text-align: left;      /* Aligns text to the left */
   color: #000;        /* Changes text color */
   font-size: 36px;       /* Optional: changes font size */
@@ -23,31 +23,8 @@ h1 {
  
 
 /* Ligne incomplète */
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 /* ==========================================
    Page-specific styles (light theme + layout)
