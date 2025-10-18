@@ -202,7 +202,6 @@ header.loaded .loading-spinner {
 /* ==========================================
   Responsive Design (Mobile)
   ========================================== */
-  
 .menu-toggle {
   display:none;
   font-size: 1.8rem;
@@ -224,18 +223,14 @@ header.loaded .loading-spinner {
 
   nav {
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0); /* default transparent */
   }
 
   nav ul {
-    display: none;
-    flex-direction: column;
+    display: none;            /* hidden by default */
+    flex-direction: column;   /* stacked links */
     gap: 16px;
-    background: rgba(0, 0, 0, 0);
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
+    position: static;         /* allow nav to grow with content */
     padding: 10px 0;
     text-align: left;
   }
@@ -248,9 +243,11 @@ header.loaded .loading-spinner {
   }
 
   nav ul.active{
-    display: flex;
-    background: rgba(0, 0, 0, 0);
+    display: flex;            /* show the menu */
   }
+
+  /* Keep navbar background transparent when menu is open */
+  header.menu-open nav { background: rgba(0, 0, 0, 0); }
 
   .hero-text {
     padding-bottom: 45vh;
@@ -260,7 +257,9 @@ header.loaded .loading-spinner {
     letter-spacing: 1px;
   }
 
-  nav ul li a:hover,
+  /* Keep hero text visible when menu is open */
+  header.menu-open .hero-text { display: block; }
+  
   nav ul li a:focus {
     color: var(--primary);
     transform: translateY(-2px);

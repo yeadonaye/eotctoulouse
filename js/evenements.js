@@ -46,17 +46,25 @@ async function loadEvents() {
       }
 
       const contentContainer = document.createElement('div');
+      contentContainer.className = 'content';
       const titleElement = document.createElement('h3');
       titleElement.textContent = event.title;
       const descriptionElement = document.createElement('p');
+      descriptionElement.className = 'description';
       descriptionElement.textContent = event.description;
 
       // Append in exact visual order: title, location, description
       contentContainer.appendChild(titleElement);
       if (event.location) {
-        const locationElement = document.createElement('p');
+        const locationElement = document.createElement(event.locationUrl ? 'a' : 'p');
         locationElement.className = 'location';
         locationElement.textContent = `📍 ${event.location}`;
+        if (event.locationUrl) {
+          locationElement.href = event.locationUrl;
+          locationElement.target = '_blank';
+          locationElement.rel = 'noopener noreferrer';
+          locationElement.setAttribute('aria-label', `Ouvrir l'emplacement pour ${event.title}`);
+        }
         contentContainer.appendChild(locationElement);
       }
       contentContainer.appendChild(descriptionElement);

@@ -198,20 +198,27 @@ img {
   /* Hide brand text on small screens */
   .brand { display: none; }
 
-  /* Stack event items vertically on mobile */
-  .item, 
-  .item.with-photo { 
-    grid-template-columns: 1fr; 
+  /* Reorder fields to: Title, Date(+Time), Location, Description */
+  .item, .item.with-photo { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "date"
+      "location"
+      "description";
+    gap: 8px;
   }
-  
-  /* Move date to bottom on mobile */
-  .date { 
-    order: 2; 
-  }
-  
+
+  /* Allow children of .content to participate in parent grid */
+  .content { display: contents; }
+
+  /* Map elements to grid areas */
+  .content h3 { grid-area: title; }
+  .date { grid-area: date; }
+  .location { grid-area: location; }
+  .description { grid-area: description; }
+
   /* Full width photos on mobile */
-  .item-photo { 
-    width: 100%; 
-    height: auto; 
-  }
+  .item-photo { width: 100%; height: auto; }
 }

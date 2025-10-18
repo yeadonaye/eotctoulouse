@@ -23,13 +23,18 @@ const navList = document.querySelector('nav ul');
 
 if (menuToggle && navList) {
   menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('active');
+    const isActive = navList.classList.toggle('active');
+    // Toggle expanded state and header background expansion
+    menuToggle.setAttribute('aria-expanded', String(isActive));
+    if (header) header.classList.toggle('menu-open', isActive);
   });
 
   // Close the menu when clicking outside (mobile)
   document.addEventListener('click', (event) => {
     if (!navList.contains(event.target) && !menuToggle.contains(event.target)) {
       navList.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      if (header) header.classList.remove('menu-open');
     }
   });
 }
