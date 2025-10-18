@@ -183,32 +183,7 @@ img {
   color: var(--text-dim); 
 }
 
-/* ==========================================
-   Footer
-   ========================================== */
-.footer { 
-  border-top: 1px solid rgba(0, 0, 0, .08); 
-  background: #0b0f19; 
-}
-
-.footer-inner { 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  padding: 22px 0; 
-}
-
-.footer-inner p { 
-  color: #e5e7eb; 
-  margin: 0; 
-}
-
-.footer-socials {
-  display: flex;
-  gap : 10px;
-  justify-content: right;
-  align-items: center
-}
+/* Footer styles moved to css/common.css */
 
 /* Replaces inline styles removed from HTML */
 #no-events {
