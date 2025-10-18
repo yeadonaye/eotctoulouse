@@ -1,9 +1,17 @@
 [
     {
-        "date": "2025-10-22",
+        
+        "date": "19/10/2025",
+        "title": "Prières",
+        "description": "Prière 'Tselote-Kidan', prière de groupe, chants et prêche de la sainte évangile",
+        "location": "Église St Marguerite, 105 Avenue des Arènes Romaines, 31300 Toulouse, France",
+        "time": "07h00"
+    },
+    {
+        "date": "23/11/2025",
         "title": "Fête de Saint Michel l'Archange",
         "description": "L'Eglise Debre Mihret St Michel de Toulouse de diocèse d'Italie et ses environs vous invite à participer à la fête annuelle de St Michel l'Archange",
-        "location": "105 Avenue des Arènes Romaines, 31300 Toulouse, France",
+        "location": "Église St Marguerite, 105 Avenue des Arènes Romaines, 31300 Toulouse, France",
         "time": "00h00"
     }
 ]

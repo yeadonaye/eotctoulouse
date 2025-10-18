@@ -28,6 +28,12 @@ async function loadEvents() {
       const dateElement = document.createElement('div');
       dateElement.className = 'date';
       dateElement.textContent = event.date;
+      if (event.time) {
+        const timeElement = document.createElement('div');
+        timeElement.className = 'time';
+        timeElement.textContent = event.time;
+        dateElement.appendChild(timeElement);
+      }
       listItem.appendChild(dateElement);
 
       if (event.photo) {
@@ -45,7 +51,14 @@ async function loadEvents() {
       const descriptionElement = document.createElement('p');
       descriptionElement.textContent = event.description;
 
+      // Append in exact visual order: title, location, description
       contentContainer.appendChild(titleElement);
+      if (event.location) {
+        const locationElement = document.createElement('p');
+        locationElement.className = 'location';
+        locationElement.textContent = `📍 ${event.location}`;
+        contentContainer.appendChild(locationElement);
+      }
       contentContainer.appendChild(descriptionElement);
       listItem.appendChild(contentContainer);
       eventsList.appendChild(listItem);
