@@ -64,3 +64,8 @@ body{ background:#f8f5ef; color:#1f2937; }
 .quote{ background:rgba(0,0,0,.04); border-left-color: rgba(0,0,0,.15); }
 /* Center footer text */
 /* Footer styles moved to css/common.css */
+
+/* Responsive: hide brand text on small screens */
+@media (max-width: 720px) {
+  .brand { display: none; }
+}

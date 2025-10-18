@@ -195,6 +195,9 @@ img {
    Responsive Design (Mobile)
    ========================================== */
 @media (max-width: 720px) {
+  /* Hide brand text on small screens */
+  .brand { display: none; }
+
   /* Stack event items vertically on mobile */
   .item, 
   .item.with-photo { 
