@@ -85,3 +85,52 @@ if (document.readyState === 'loading') {
   loadEvents();
 }
 
+// Mobile hamburger menu
+const headerEl = document.querySelector('header.header');
+const toggleBtn = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+if (headerEl && toggleBtn) {
+  const setExpanded = (expanded) => toggleBtn.setAttribute('aria-expanded', String(expanded));
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const willOpen = !headerEl.classList.contains('menu-open');
+    headerEl.classList.toggle('menu-open', willOpen);
+    setExpanded(willOpen);
+  });
+  document.addEventListener('click', (e) => {
+    if (!headerEl.classList.contains('menu-open')) return;
+    if (navMenu && navMenu.contains(e.target)) return;
+    if (toggleBtn.contains(e.target)) return;
+    headerEl.classList.remove('menu-open');
+    setExpanded(false);
+  });
+  if (navMenu) {
+    navMenu.addEventListener('click', (e) => {
+      const a = e.target.closest('a');
+      if (!a) return;
+      headerEl.classList.remove('menu-open');
+      setExpanded(false);
+    });
+  }
+}
+
+// Render language separators without leading pipe based on visible links
+function renderLangSeparators() {
+  document.querySelectorAll('.lang-switch').forEach((sw) => {
+    sw.querySelectorAll('.sep').forEach((s) => s.remove());
+    const links = Array.from(sw.querySelectorAll('a')).filter(a => getComputedStyle(a).display !== 'none');
+    for (let i = 1; i < links.length; i++) {
+      const sep = document.createElement('span');
+      sep.className = 'sep';
+      sep.textContent = '|';
+      links[i].before(sep);
+    }
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderLangSeparators);
+} else {
+  renderLangSeparators();
+}
+

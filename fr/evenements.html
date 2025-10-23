@@ -3,87 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- SEO: Page title (50-60 characters optimal) -->
   <title>Événements à venir – EOTC Toulouse | Église orthodoxe éthiopienne</title>
-  
-  <!-- SEO: Meta description (150-160 characters optimal) -->
   <meta name="description" content="Découvrez les prochains événements de l'Église orthodoxe éthiopienne à Toulouse (EOTC). Cultes, études bibliques, groupes de jeunes et activités communautaires." />
-  
-  <!-- SEO: Keywords for local search -->
   <meta name="keywords" content="EOTC Toulouse, événements église, culte Toulouse, église éthiopienne Toulouse, activités religieuses, groupe de jeunes, étude biblique" />
-  
-  <!-- SEO: Author and language -->
   <meta name="author" content="EOTC Toulouse" />
   <meta name="language" content="fr" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="/css/common.css" />
   <link rel="stylesheet" href="/css/evenements.css" />
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/img/egliseIcone.png" />
-  
-  <!-- SEO: Canonical URL (update to your actual domain when deployed) -->
-  <link rel="canonical" href="https://eotctoulouse.org/evenements.html" />
-  
-  <!-- Open Graph meta tags for social media sharing -->
+  <link rel="icon" type="image/x-icon" href="/img/eglise_icone.ico" />
+  <link rel="canonical" href="https://www.eotctoulouse.org/fr/evenements.html" />
   <meta property="og:title" content="Événements à venir – EOTC Toulouse" />
   <meta property="og:description" content="Découvrez les prochains événements de l'Église orthodoxe éthiopienne à Toulouse. Cultes, études bibliques et activités communautaires." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eotctoulouse.org/evenements.html" />
-  <meta property="og:image" content="https://eotctoulouse.org/img/egliseinterior.jpg" />
+  <meta property="og:url" content="https://www.eotctoulouse.org/fr/evenements.html" />
+  <meta property="og:image" content="https://www.eotctoulouse.org/img/egliseinterior.jpg" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="EOTC Toulouse" />
-  
-  <!-- Twitter Card meta tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Événements à venir – EOTC Toulouse" />
-  <meta name="twitter:description" content="Découvrez les prochains événements de l'Église orthodoxe éthiopienne à Toulouse." />
-  <meta name="twitter:image" content="https://eotctoulouse.org/img/egliseinterior.jpg" />
-  
-  <!-- SEO: Structured data (JSON-LD) for rich search results -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Church",
-    "name": "EOTC Toulouse – Église orthodoxe éthiopienne à Toulouse",
-    "url": "https://eotctoulouse.org",
-    "logo": "https://eotctoulouse.org/img/egliseIcone.png",
-    "image": "https://eotctoulouse.org/img/egliseinterior.jpg",
-    "description": "Église orthodoxe éthiopienne à Toulouse. Cultes, études bibliques et activités communautaires.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Toulouse",
-      "addressCountry": "FR"
-    }
-  }
-  </script>
 </head>
 <body>
-  <!-- Navbar -->
   <header class="header">
     <div class="container nav">
       <div class="nav-left">
         <img class="logo-icon" src="/img/eglise_icone.ico" alt="Icône Église" />
-        <a href="/index.html" class="brand" aria-label="Accueil">EOTC Toulouse</a>
+        <a href="/fr/index.html" class="brand" aria-label="Accueil">EOTC Toulouse</a>
       </div>
       <button class="menu-toggle" aria-label="Menu">☰</button>
       <nav class="nav-menu" aria-label="Navigation principale">
-        <a href="/index.html">Accueil</a>
-        <a href="/notre_eglise.html">Notre Église</a>
+        <a href="/fr/index.html">Accueil</a>
+        <a href="/fr/notre_eglise.html">Notre Église</a>
       </nav>
       <div class="lang-switch" aria-label="Changer de langue">
-        <a href="/evenements.html" data-lang="fr" aria-label="Français">FR</a>
-        <a href="/en/evenements.html" data-lang="en" aria-label="English">EN</a>
-        <a href="/am/evenements.html" data-lang="am" aria-label="Amharic">AM</a>
+        <a href="/fr/evenements.html" aria-label="Français">FR</a>
+        <a href="/en/evenements.html" aria-label="English">EN</a>
+        <a href="/am/evenements.html" aria-label="Amharic">AM</a>
       </div>
     </div>
   </header>
 
-  <!-- Page header -->
   <section class="page-hero">
     <div class="container">
       <h1>Événements à venir</h1>
@@ -91,20 +50,16 @@
     </div>
   </section>
 
-  <!-- Events list (dynamically loaded from events.json) -->
   <section class="events">
     <div class="container">
-      <ul class="list" id="events-list">
-        <!-- Events will be loaded here by JavaScript -->
-      </ul>
+      <ul class="list" id="events-list"></ul>
       <p id="no-events">Aucun événement à venir pour le moment.</p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"> </span> EOTC Toulouse. Tous droits réservés.</p>
+      <p>© <span id="year"> </span> EEOT Toulouse. Tous droits réservés.</p>
       <div class="footer-socials">
           <a href="https://www.instagram.com/eotc.st.michael.toulouse"><img class="icon" src="/img/instagram.png" alt="Page Instagram de l'Eglise"></a>
           <a href="http://www.youtube.com/@toulousest.michaeleotc"><img class="icon-youtube" src="/img/youtube.png" alt="Page Youtube de l'Eglise"></a>

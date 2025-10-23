@@ -1,4 +1,4 @@
-# EEOT Toulouse
+# EOTC Toulouse
 
 Bienvenue sur le dépôt Git officiel dédié au développement de notre site web.
 Nous vous remercions de votre intérêt pour ce projet.

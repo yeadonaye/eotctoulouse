@@ -108,6 +108,16 @@ img {
   text-decoration: none; 
 }
 
+/* Hamburger button (hidden by default, shown on mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* ==========================================
    Page Header Section
    ========================================== */
@@ -197,6 +207,27 @@ img {
 @media (max-width: 720px) {
   /* Hide brand text on small screens */
   .brand { display: none; }
+
+  /* Show hamburger button */
+  .menu-toggle { display: block; }
+
+  /* Hide logo icon on mobile as requested */
+  .logo-icon { display: none; }
+
+  /* Stack nav items and hide by default */
+  .nav-menu {
+    position: static;
+    transform: none;
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  /* When header has menu-open, show the menu */
+  .header.menu-open .nav-menu { display: flex; }
 
   /* Reorder fields to: Title, Date(+Time), Location, Description */
   .item, .item.with-photo { 

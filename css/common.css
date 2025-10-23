@@ -3,7 +3,7 @@
 /* Footer (based on evenements page) */
 .footer {
   border-top: 1px solid rgba(0, 0, 0, .08);
-  background: #0b0f19;
+  background: rgba(0, 0, 0, 1);
 }
 
 .footer-inner {
@@ -34,3 +34,47 @@
   height: 24px;
   width: 43px;
 }
+
+/* ===============================
+   Language switcher (FR | EN | AM)
+   =============================== */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0; /* separators handle spacing */
+  font-weight: 600;
+}
+
+.lang-switch a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.lang-switch .sep {
+  color: #ffffff66;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Header pages (evenements/notre_eglise) place switcher at right */
+.header .container.nav { position: relative; }
+.header .lang-switch {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Simple UL nav (home pages) push switcher to right */
+nav ul { display: flex; align-items: center; gap: 16px; }
+nav ul .lang-switch { margin-left: auto; }
+
+/* Hide the current language in the switcher */
+html[lang="fr"] .lang-switch a[data-lang="fr"] { display: none; }
+html[lang="en"] .lang-switch a[data-lang="en"] { display: none; }
+html[lang="am"] .lang-switch a[data-lang="am"] { display: none; }
+/* Back-compat if some pages still use /fr/,/en/,/am/ links */
+html[lang="fr"] .lang-switch a[href^="/fr/"] { display: none; }
+html[lang="en"] .lang-switch a[href^="/en/"] { display: none; }
+html[lang="am"] .lang-switch a[href^="/am/"] { display: none; }

@@ -38,3 +38,23 @@ if (menuToggle && navList) {
     }
   });
 }
+
+// Render language separators without leading pipe based on visible links
+function renderLangSeparators() {
+  document.querySelectorAll('.lang-switch').forEach((sw) => {
+    sw.querySelectorAll('.sep').forEach((s) => s.remove());
+    const links = Array.from(sw.querySelectorAll('a')).filter(a => getComputedStyle(a).display !== 'none');
+    for (let i = 1; i < links.length; i++) {
+      const sep = document.createElement('span');
+      sep.className = 'sep';
+      sep.textContent = '|';
+      links[i].before(sep);
+    }
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderLangSeparators);
+} else {
+  renderLangSeparators();
+}

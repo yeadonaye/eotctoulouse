@@ -40,6 +40,7 @@ p {
 .nav-left{ display:flex; align-items:center; gap:10px; }
 .nav-menu{ position:absolute; left:50%; transform:translateX(-50%); display:flex; gap:28px; align-items:center; justify-content:center; }
 .logo-icon{ width:24px; height:24px; object-fit:cover; border-radius:50%; overflow:hidden }
+.menu-toggle{ display:none; font-size:1.6rem; background:none; border:none; color:#fff; cursor:pointer }
 .cover{
   position:relative; min-height:54vh; display:grid; place-items:center; text-align:center; color:#fff;
   background-image: url('/img/egliseinterior.jpg');
@@ -67,5 +68,9 @@ body{ background:#f8f5ef; color:#1f2937; }
 
 /* Responsive: hide brand text on small screens */
 @media (max-width: 720px) {
-  .brand { display: none; }
+  .brand{ display:none }
+  .logo-icon{ display:none }
+  .menu-toggle{ display:block }
+  .nav-menu{ position:static; transform:none; display:none; flex-direction:column; gap:14px; background:rgba(0,0,0,.9); padding:12px 0; width:100% }
+  .header.menu-open .nav-menu{ display:flex }
 }
